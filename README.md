@@ -1,2 +1,2 @@
-# clarity-learn
+# clarity-book
 clarity learning exercises
