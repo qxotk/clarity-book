@@ -1,2 +1,2 @@
 # clarity-book
-clarity learning exercises
+exercises from the clarity book at book.clarity-lang.org
