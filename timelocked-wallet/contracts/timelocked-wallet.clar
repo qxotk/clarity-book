@@ -52,15 +52,6 @@
     )
 )
 
-;; bestow:
-(define-public (bestow (new-beneficiary principal))
-    (begin 
-        (asserts! (is-eq (some tx-sender) (var-get beneficiary)) err-beneficiary-only)
-        (var-set beneficiary (some new-beneficiary))
-        (ok true)
-    )
-)
-
 ;; claim:
 ;; - tx-sender must be the beneficiary to claim
 ;; - must be past the unlock-height
@@ -72,3 +63,11 @@
     )
 )
 
+;; bestow:
+(define-public (bestow (new-beneficiary principal))
+    (begin 
+        (asserts! (is-eq (some tx-sender) (var-get beneficiary)) err-beneficiary-only)
+        (var-set beneficiary (some new-beneficiary))
+        (ok true)
+    )
+)
