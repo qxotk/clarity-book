@@ -1,7 +1,7 @@
-
 [project]
 name = "timelocked-wallet"
-
-# [contracts.counter]
-# path = "contracts/counter.clar"
-# depends_on = []
+requirements = []
+costs_version = 1
+[contracts.timelocked-wallet]
+path = "contracts/timelocked-wallet.clar"
+depends_on = []
